@@ -23,7 +23,7 @@ exports.peticionesPost = (req, res) => {
 
   switch (req.url) {
     case "/buscarProducto":
-      peticion(req, res, connection);
+      peticion(req, res, conexion());
       break;
     default:
       break;

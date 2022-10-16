@@ -2,6 +2,7 @@ const { createServer } = require("http");
 
 const httpServer = createServer((req, res) => {
   const peticiones = require("./peticiones/index.js");
+  //filtro GET o POST
   switch (req.method) {
     case "GET":
       peticiones.peticionesGet(req, res);
