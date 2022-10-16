@@ -36,7 +36,6 @@ exports.filtroDatos = (res, connectionr) => {
           "Access-Control-Allow-Origin": "*",
           "Content-Type": "application/json",
         });
-        console.log(results);
         res.write(JSON.stringify(results));
         res.end();
    
